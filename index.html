@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>B r e a t h e</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=News+Cycle"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.comp.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+      <h1 class="header__heading">
+        Welcome to <span class="header__heading-span">Breathe</span>, a free
+        timed meditation app
+      </h1>
+      <canvas id="canvas" resize></canvas>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="main">
+      <section class="background">
+        <h3 class="background__heading">
+          Select a background noise that suits you
+        </h3>
+        <!-- SOUND IMAGES -->
+        <div class="background__container">
+          <div class="background__group">
+            <div class="background__card background__card-pushed">
+              <img
+                src="img/images/beach.jpg"
+                alt="beach"
+                class="background__image"
+              />
+              <p class="background__text">Beach waves</p>
+            </div>
+
+            <div class="background__card">
+              <img
+                src="img/images/forest.jpg"
+                alt="forest"
+                class="background__image"
+              />
+              <p class="background__text">Amazonian forest</p>
+            </div>
+          </div>
+
+          <div class="background__group">
+            <div class="background__card">
+              <img
+                src="img/images/rain.jpg"
+                alt="rain"
+                class="background__image"
+              />
+              <p class="background__text">Rain</p>
+            </div>
+
+            <div class="background__card background__card-pushed">
+              <img
+                src="img/images/fire.jpg"
+                alt="fire"
+                class="background__image"
+              />
+              <p class="background__text">Crackling fire</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIMER SECTION -->
+      <section class="timer">
+        <h3 class="timer__heading">
+          Select a time you wish to meditate for or type in your own
+        </h3>
+        <div class="timer__container">
+          <button class="timer__btn" data-time="300">5 minutes</button>
+          <button class="timer__btn" data-time="600">10 minutes</button>
+          <button class="timer__btn" data-time="900">15 minutes</button>
+        </div>
+        <form name="timerForm" id="timer__form" class="timer__form">
+          <input
+            type="number"
+            name="minutes"
+            class="timer__input"
+            placeholder="Enter amount of minutes"
+          />
+          <button type="submit" class="timer__btn timer__btn-last">Set</button>
+        </form>
+      </section>
+      <!-- time remaining section -->
+      <section class="remaining">
+        <h3 class="remaining__time">00:00</h3>
+        <div class="heading-last">
+          <h3 class="heading-3">Now close your eyes, relax... and breathe.</h3>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left">
+          <p class="footer__text">
+            This project is and will be free for as long as possible. If you'd
+            like to donate to this project, please consider donating to one of
+            the few great charities below.
+          </p>
+        </div>
+
+        <div class="footer__right">
+          <img
+            src="img/images/mind-logo.png"
+            alt="mind logo"
+            class="footer__img"
+          />
+          <img
+            src="img/images/logo-blue-fixed.png"
+            alt="calm logo"
+            class="footer__img"
+          />
+          <img src="img/images/logo.svg" alt="logo" class="footer__img" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script
+      type="text/paperscript"
+      src="js/wave-script.js"
+      canvas="canvas"
+    ></script>
+    <script src="js/paper-full.min.js"></script>
+  </body>
+</html>

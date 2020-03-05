@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: "Mosk-Bold";
+  src: url("../img/fonts/Mosk-Bold-700.woff") format("woff"); }
+
+@font-face {
+  font-family: "Mosk";
+  src: url("../img/fonts/Mosk-Normal-400.woff") format("woff"); }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+#canvas {
+  width: 100%;
+  display: block;
+  height: 300px; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F3F9FB; }
+  .header__heading {
+    font-size: 7rem;
+    padding: 12rem 4rem;
+    font-family: "Mosk-Bold";
+    background-image: linear-gradient(to right, #0177e1, #50E3c2);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center; }
+    .header__heading-span {
+      letter-spacing: .7rem; }
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/images/meditation.jpg);
+  background-size: cover;
+  background-position: 50% 50%; }
+  .background__heading {
+    font-family: "Mosk";
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 3rem 4rem;
+    color: #F3F9FB;
+    font-weight: 400;
+    margin-bottom: 6rem; }
+  .background__container {
+    display: flex;
+    margin-top: 2.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+  .background__group {
+    display: flex;
+    width: 80rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: space-around; }
+  .background__card {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    max-width: 18rem;
+    padding: 1rem;
+    margin-bottom: 6rem;
+    transition: all .2s; }
+    .background__card:hover {
+      cursor: pointer;
+      transform: scale(1.1); }
+    .background__card-pushed {
+      padding-top: 12rem; }
+  .background__image {
+    display: block;
+    border-radius: 50%;
+    width: 18rem;
+    height: 18rem;
+    background-size: cover;
+    border: 1px solid rgba(80, 227, 194, 0.6);
+    box-shadow: 0rem 0rem 2.2rem rgba(0, 0, 0, 0.5); }
+  .background__text {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #50E3c2;
+    text-transform: uppercase;
+    font-family: "News Cycle", sans-serif; }
+
+.timer {
+  background-color: #50E3c2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .timer__heading {
+    font-family: "Mosk";
+    color: #F3F9FB;
+    font-size: 3rem;
+    padding: 4rem 4rem;
+    margin-top: 3rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .timer__container {
+    display: flex;
+    width: 70rem;
+    justify-content: space-around;
+    padding: 2rem; }
+  .timer__form {
+    display: flex;
+    flex-direction: column; }
+  .timer__btn {
+    border: none;
+    padding: 2rem 5rem;
+    color: #F3F9FB;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    background-image: linear-gradient(to bottom, #03aee1, #0178e1);
+    border-radius: 5rem; }
+    .timer__btn:hover {
+      cursor: pointer; }
+    .timer__btn-last {
+      margin-bottom: 5rem; }
+  .timer__input {
+    padding: 1.5rem;
+    border: none;
+    font-size: 2.5rem;
+    border-radius: 5rem; }
+    .timer__input:focus {
+      outline: none; }
+
+.remaining {
+  display: flex;
+  background-image: linear-gradient(to bottom, #50E3c2, #0177e1);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .remaining__time {
+    padding: 5rem 3rem;
+    font-size: 7rem;
+    color: #F3F9FB; }
+
+.heading-last {
+  display: flex;
+  padding: 5rem;
+  justify-content: center; }
+
+.heading-3 {
+  font-family: "Mosk-Bold";
+  color: #50E3c2;
+  font-size: 7rem;
+  text-align: center; }
+
+.footer {
+  background-color: #113F67; }
+  .footer__container {
+    display: flex;
+    padding: 7rem 4rem; }
+  .footer__img {
+    width: 10rem; }
