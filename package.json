@@ -9,7 +9,7 @@
   "author": "Andrew Dobrych",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "paper": "^0.12.0"
   }
 }
